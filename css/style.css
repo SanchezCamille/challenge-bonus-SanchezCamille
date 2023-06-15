@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+#logo-container {
+    border: 2px solid red;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+}
+
+.fa-twitter {
+    color: rgb(57, 175, 253);
+    animation: spiral 3s infinite;
+}
+
+.fa-heart {
+    color: rgb(255, 103, 103);
+    animation: bottom-to-top 3s infinite;
+}
+
+.fa-message {
+    color: rgb(101, 255, 134);
+    animation: top-to-bottom 3s infinite;
+}
+
+.fa-dollar-sign {
+    color: grey;
+    animation: zoom 3s infinite;
+}
+
+.fa-envelope {
+    color: rgb(136, 36, 202);
+    animation: tilt 0.3s infinite ;
+}
+
+@keyframes spiral {
+    0% {
+      transform: rotate(0deg) translate(0,300px);
+    }
+    100% {
+      transform: rotate(360deg) translate(0px);
+    }
+  }
+
+@keyframes bottom-to-top {
+    0% {
+        transform: translate(0,300px);
+    }
+    100% {
+        transform: translate(0);
+    }
+
+}
+
+@keyframes top-to-bottom {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(0,700px);
+    }
+}
+
+@keyframes zoom {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  }
+
+  @keyframes tilt {
+    0% {
+        transform: translate(10px,0);
+    }
+    100% {
+        transform: translate(0);
+    }
+    
+  }
